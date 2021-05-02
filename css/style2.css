@@ -1,7 +1,60 @@
-form .backlog {
+body {
+    background: rgb(240, 241, 241);
+}
+
+.con {
+    width: 400px;
+    background: white;
+}
+
+form .navbar-brand {
     background: #00122B;
 }
 
-form .backlog img {
-    
+.mb-3 input {
+    border: none;
+    background: none;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    outline:0;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.mb-3 label {
+    top: 0;
+    left: 0;
+    color: #d3d3d3;
+    height: 20px;
+    transition: 0.5s all;
+    z-index: -1;
+    cursor: text;
+}
+
+.mb-3 input:invalid {
+    outline: none;
+}
+
+.mb-3 input:focus,
+.mb-3 input:valid {
+    border-color: #00122B;
+}
+
+.mb-3 input:focus~label,
+.mb-3 input:valid~label {
+    color: #0a2244;
+    top: -15px;
+    font-size: 12px;
+}
+
+.btn {
+    left: 80%;
+    background: #00122B;
+    color: white;
+    border: 2px solid;
+}
+
+.btn:hover {
+    background: white;
+    border: 2px solid;
 }
